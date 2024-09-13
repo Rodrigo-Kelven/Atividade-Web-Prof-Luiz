@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos - Escola Purple Hat</title>
+</head>
+<body>
+    <header>
+        <h1>Escola Purple Hat</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="lista.html">Lista de Alunos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>Cadastro de Alunos</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="turma">Turma:</label>
+            <select id="turma" name="turma">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select><br><br>
+            
+            <fieldset>
+                <legend>Gênero:</legend>
+                <label><input type="radio" name="genero" value="Masculino"> Masculino</label>
+                <label><input type="radio" name="genero" value="Feminino"> Feminino</label>
+                <label><input type="radio" name="genero" value="Outro"> Outro</label>
+            </fieldset><br>
+            
+            <fieldset>
+                <legend>Preferências:</legend>
+                <label><input type="checkbox" name="preferencias" value="Arte"> Motos</label>
+                <label><input type="checkbox" name="preferencias" value="Arte"> Programação</label>
+                <label><input type="checkbox" name="preferencias" value="Esportes"> Esportes</label>
+                <label><input type="checkbox" name="preferencias" value="Esportes"> Ciclismo</label>
+                <label><input type="checkbox" name="preferencias" value="Música"> Música</label>
+                <label><input type="checkbox" name="preferencias" value="Arte"> Arte</label>
+            </fieldset><br>
+            
+            <label for="observacoes">Observações:</label><br>
+            <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea><br><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Contato: contato@escolapuplehat.com | Telefone: (55) 9.8854-7622</p>
+    </footer>
+</body>
+</html>
